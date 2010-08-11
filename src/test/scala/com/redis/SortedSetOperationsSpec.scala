@@ -73,8 +73,8 @@ class SortedSetOperationsSpec extends Spec
   describe("zremrangebyscore") {
     it ("should remove based on score range") {
       add
-      zremrangebyscore("hackers", 1912, 1940) should equal(Some(3))
-      zremrangebyscore("hackers", 0, 3) should equal(Some(0))
+      zremrangebyscore("hackers", "1912", "1940") should equal(Some(3))
+      zremrangebyscore("hackers", "0", "3") should equal(Some(0))
     }
   }
 
