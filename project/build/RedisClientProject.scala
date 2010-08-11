@@ -1,7 +1,7 @@
 import sbt._
 import sbt.CompileOrder._
 
-class RedisClientProject(info: ProjectInfo) extends DefaultProject(info) 
+class RedisClientProject(info: ProjectInfo) extends DefaultProject(info) with IdeaProject
 {
   // override def useDefaultConfigurations = true
   override def compileOptions = super.compileOptions ++
